@@ -310,7 +310,7 @@ main section article h3{
         border-left: 1px solid #aaa;
         margin-bottom: 1em;
     }
-    main section .row article:last-child{
+    main section .row article:nth-child(3){
         width: 100%;
     }
 
@@ -324,11 +324,41 @@ main section article h3{
         border-left: 1px solid #aaa;
         margin-bottom: 1em;
     }
-    main section .row article:last-child{
+    main section .row article:nth-child(3){
         width: 33.33%;
         
         
     }
     
 }
+/*MAIN SECCION ABOUT US*/
 
+main section  .row .columna{
+    border: 0px;
+}
+main section .row .columna h4{
+    margin-bottom: 1em;
+    color: var(--color-principal);
+}
+main section .marco{
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+    width: 87%;
+    margin: 0 auto;
+}
+main section .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+main section .columna:hover .marco, main section .columna:hover img{
+    transform: rotateZ(0deg);
+
+}
+@media(min-width:48.000em){
+
+    main section .row .columna{
+        width: 50%;
+    }
+    
+}
